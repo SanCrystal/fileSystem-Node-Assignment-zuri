@@ -22,12 +22,7 @@ let writeTofile = (filePath, file) => {
     });
 }
 
-// async function fetchJson(url) {
-//     let response = await fetch(url, fetchHeaders);
-//     let mod = await response.json();
-//     console.log(response);
-// }
-
+//call fetchJson 
 fetchJson(source).then(data => {
     let jsonFile = JSON.stringify(data);
     return jsonFile;
